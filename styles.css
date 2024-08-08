@@ -1,0 +1,456 @@
+:root {
+    --color-background: black;  
+    --color-text: white;       
+    --color-title: white;        
+    --color-navbar: #0098f1;    
+    --color-link: #0098f1;     
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.2px;
+    color: var(--color-text);
+    margin: 0;
+    background-color: var(--color-background);
+}
+
+h1 {
+    font-family: 'Roboto', serif;
+    font-size: 2.4375rem;
+    line-height: 2.625rem;
+    margin-bottom: 3.125rem;
+    color: var(--color-text);
+}
+
+h2 {
+    font-family: 'Roboto', serif;
+    font-size: 1.75rem;
+    line-height: 1.875rem;
+    text-align: center;
+    color: var(--color-title);
+    margin-block-start: 2.5rem;
+    margin-block-end: 1.875rem;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+p {
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-link);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+nav{
+  background: #0082e6;
+  height: 80px;
+  width: 100%;
+}
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,a:hover{
+  background: #1b9bff;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+
+
+section{
+  background: url(bg1.jpg) no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+}
+
+.right a {
+    float: right;
+}
+
+.container {
+    width: 100%;
+}
+
+.top {
+    background-color: var(--color-navbar);
+    height: 40.625rem;
+}
+
+.clear {
+    background-color: var(--color-background);
+    height: auto;
+}
+
+.nav-top {
+    border-top: 0.5rem solid var(--color-navbar);
+}
+
+.row {
+    max-width: 63rem;
+    margin: auto;
+    display: block;
+}
+
+.content {
+    padding: 1.375rem;
+}
+
+.wrapper {
+    display: flex;
+    padding: 1.375rem;
+}
+
+.sidepanel {
+    width: 12.5rem;
+    margin-top: 7.5rem;
+    background-color: var(--color-background);
+    overflow-x: hidden;
+    position: fixed;
+    height: 80%;
+}
+
+.sidepanel a.title {
+    font-family: 'Noto Serif', serif;
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-align: left;
+    text-decoration: none;
+    color: var(--color-text);
+    display: block;
+    padding-bottom: 0.75rem;
+}
+
+.sidepanel a.section,
+.sidepanel a.sub-section {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9375rem;
+    text-align: left;
+    display: block;
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+.sidepanel a.section {
+    line-height: 1.875rem;
+}
+
+.sidepanel a.sub-section {
+    line-height: 1.5625rem;
+    padding-left: 1.25rem;
+}
+
+.sidepanel a.title:hover,
+.sidepanel a.section:hover,
+.sidepanel a.sub-section:hover {
+    text-decoration: underline;
+}
+
+.main-col {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.main-col p {
+    font-size: 0.9375rem;
+    line-height: 1.5rem;
+    margin-bottom: 2.25rem;
+}
+
+.right-col {
+    margin-top: 6.25rem;
+    text-align: left;
+    width: 100%;
+    margin-left: 13.75rem;
+}
+
+.right-col h1 {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-text);
+}
+
+.right-col h2 {
+    font-size: 1.3125rem;
+    line-height: 1.5rem;
+    margin-bottom: 1.875rem;
+    text-align: left;
+    margin-block-start: 1.25rem;
+    margin-block-end: 0.625rem;
+    color: var(--color-title);
+}
+
+.right-col p {
+    font-size: 1rem;
+    line-height: 1.375rem;
+    margin-bottom: 2.25rem;
+    color: var(--color-text);
+}
+
+.right-col a {
+    color: var(--color-link);
+    text-decoration: underline;
+}
+
+.right-col ol {
+    margin-block-start: 0.625rem;
+}
+
+.logo {
+    width: 9.375rem;
+    float: left;
+    margin: -0.625rem 1.875rem;
+}
+
+.col {
+    width: 50%;
+    float: left;
+}
+
+.top-info {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.0625rem;
+    text-align: center;
+    color: var(--color-text);
+}
+
+.divider {
+    width: 2.5rem;
+    height: 0.25rem;
+    background: var(--color-navbar);
+    border-radius: 1.875rem;
+    margin: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.left {
+    margin: 1.25rem 0;
+}
+
+.footer {
+    float: left;
+    width: 100%;
+    padding: 5.625rem 0 1.25rem;
+    font-size: 0.9375rem;
+    text-align: center;
+    background-color: var(--color-background);
+}
+
+.footer a {
+    color: var(--color-text);
+}
+
+.resp-break {
+    display: none;
+}
+
+.break {
+    display: block;
+}
+
+.space {
+    height: 1.875rem;
+    width: 100%;
+    float: left;
+}
+
+.double {
+    height: 3.75rem;
+}
+
+.links {
+    float: left;
+    padding-bottom: 0.5rem;
+}
+
+/* Break Points */
+
+/* Extra small-small devices (phones, 420px and down) */
+@media only screen and (max-width: 26.25rem) {
+    .logo {
+        width: 6.25rem;
+    }
+
+    .navbar {
+        height: auto;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .links {
+        float: none;
+    }
+}
+
+/* Small devices (phones, 650px and down) */
+@media only screen and (max-width: 40.625rem) {
+    .logo {
+        width: 7.1875rem;
+        margin: -0.625rem 0;
+    }
+
+    .navbar a {
+        padding-bottom: 0.3125rem;
+        margin-left: 2.5rem;
+        margin-right: 0;
+    }
+
+    .resp-break {
+        display: block;
+        margin: 1.0625rem;
+    }
+
+    .main-col {
+        width: 100%;
+    }
+
+    .wrapper {
+        display: block;
+    }
+
+    .sidepanel {
+        width: 100%;
+        text-align: center;
+        position: relative;
+        height: auto;
+    }
+
+    .sidepanel a.title,
+    .sidepanel a.section,
+    .sidepanel a.sub-section {
+        text-align: center;
+    }
+
+    .left {
+        margin: 1.25rem auto;
+    }
+
+    .right-col {
+        position: relative;
+        margin-top: 1.25rem;
+        margin-left: 0;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 650px and up) */
+@media only screen and (min-width: 40.625rem) {
+    .logo {
+        margin: -0.625rem 0;
+    }
+
+    .right a {
+        float: right;
+        padding-bottom: 0.3125rem;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 48rem) {
+    .logo {
+        margin: -0.625rem 0;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (max-width: 59.5rem) {
+    label.logo {
+        font-size: 1.875rem;  /* 30px to rem */
+        padding-left: 3.125rem;  /* 50px to rem */
+    }
+
+    nav ul li a {
+        font-size: 1rem;  /* 16px to rem */
+    }
+}
+
+/* Custom breakpoints */
+@media (max-width: 53.625rem) {
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 5rem;  /* 80px to rem */
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 3.125rem 0;  /* 50px to rem */
+        line-height: 1.875rem;  /* 30px to rem */
+    }
+
+    nav ul li a {
+        font-size: 1.25rem;  /* 20px to rem */
+    }
+
+    a:hover, a.active {
+        background: none;
+        color: #0082e6;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
+/* End Break Points */
